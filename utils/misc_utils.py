@@ -22,8 +22,9 @@ def print_log(file):
     return write_log
 
 
-_, term_width = os.popen('stty size', 'r').read().split()
-term_width = int(term_width)
+# _, term_width = os.popen('stty size', 'r').read().split()
+# term_width = int(term_width)
+term_width = 100
 
 TOTAL_BAR_LENGTH = 86.
 last_time = time.time()
